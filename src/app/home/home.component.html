@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="menu">
+    <h1>Coin Toss</h1>
+    <div class="btns">
+      <!-- <img src="assets/image-43D6-9331-70-0.png" width="100"> -->
+      <select class="form-select" aria-label="Pick a side" (change)="onSelect($event)">
+      <option>
+        Fairy tails
+      </option>
+      <option>
+        Heads
+      </option>
+    </select>
+    <button (click)="getValue()">Toss coin</button>
+  </div>
+  <h2>{{progress}}</h2>
+    </div>
+  <article>
+    <div>
+      <div class="coin">
+        {{formattedValue}}
+      </div>
+    </div>
+  </article>
+</div>
